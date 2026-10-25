@@ -104,7 +104,7 @@ async function main() {
       trainee: m.member_type === 'TRAINEE' || Boolean(m.trainee),
       team: m.team || (m.member_type === 'TRAINEE' || Boolean(m.trainee) ? 'TRAINEE' : 'DREAM'),
       picture: pictureFilename,
-      image_url: `https://raw.githubusercontent.com/nzl404/databases/master/jkt48/static/members/${pictureFilename}`
+      image_url: `https://raw.githubusercontent.com/alveeria/databases/master/jkt48/static/members/${pictureFilename}`
     };
 
     console.log(`[Sync] Added: Gen ${newRecord.generation} - ${newRecord.name} (Trainee: ${newRecord.trainee})`);
